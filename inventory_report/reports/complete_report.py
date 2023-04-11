@@ -1,5 +1,4 @@
 from inventory_report.reports.simple_report import SimpleReport
-# from simple_report import SimpleReport
 from collections import Counter
 
 
@@ -17,36 +16,3 @@ class CompleteReport(SimpleReport):
             "Produtos estocados por empresa:\n"
             f"{second_report}"
         )
-
-
-lista_teste = [
-    {
-        "id": 1,
-        "nome_do_produto": "MESA",
-        "nome_da_empresa": "Forces of Nature",
-        "data_de_fabricacao": "2022-05-04",
-        "data_de_validade": "2023-05-09",
-        "numero_de_serie": "FR48",
-        "instrucoes_de_armazenamento": "Conservar ao abrigo de luz",
-    },
-    {
-        "id": 2,
-        "nome_do_produto": "MESA",
-        "nome_da_empresa": "Forces of Nature",
-        "data_de_fabricacao": "2022-05-10",
-        "data_de_validade": "2023-06-10",
-        "numero_de_serie": "FR48",
-        "instrucoes_de_armazenamento": "Conservar ao abrigo de luz",
-    },
-    {
-        "id": 3,
-        "nome_do_produto": "sofá",
-        "nome_da_empresa": "denis daros",
-        "data_de_fabricacao": "2022-05-10",
-        "data_de_validade": "2023-07-10",
-        "numero_de_serie": "FR48",
-        "instrucoes_de_armazenamento": "Conservar ao abrigo de luz",
-    },
-]
-teste = CompleteReport.generate(lista_teste)
-print(teste)
